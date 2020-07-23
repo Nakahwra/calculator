@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ptBr">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,33 +9,52 @@
     <script src="https://kit.fontawesome.com/a8b6c52582.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="calculator">
-        <div class="output">
-            <div class="memory-operation"></div>
-            <div class="current-operation"></div>
+    <main>
+        <div class="calculator">
+            <div class="output">
+                <div data-memory-operation class="memory-operation"></div>
+                <div data-current-operation class="current-operation"></div>
+            </div>
+            <div class="buttons">
+                <button data-backspace class="operator"><i class="fa fa-backspace"></i></button>
+                <button data-all-clear class="operator">AC</button>
+                <button data-number-sign class="operator">±</button>
+                <button data-operation class="operator">÷</button>
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operation class="operator">×</button>
+                <button data-number >4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operation class="operator">-</button>
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-operation class="operator">+</button>
+                <button data-number>00</button>
+                <button data-number>0</button>
+                <button data-number>.</button>
+                <button data-equals class="operator"> = </button>
+            </div>
         </div>
-        <div class="buttons">
-            <button class="operator"><i class="fa fa-backspace"></i></button>
-            <button class="operator">AC</button>
-            <button class="operator">±</button>
-            <button class="operator">÷</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">×</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">−</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">+</button>
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="operator">=</button>
+
+        <div class="about">
+            <div>
+                <h1 class="title">Calculator</h1>
+                <p class="description">
+                    A simple calculator made with pure HTML, CSS and Javascript
+                </p>
+            </div>
+            <div>
+                <p class="author">Developed by <strong>Lucas Nakahara</strong></p>
+                <div class="social-media">
+                    <a href=""><i class="fab fa-github-square"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+    <script src="./script.js"></script>
 </body>
 </html>
